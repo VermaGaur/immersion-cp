@@ -1,5 +1,3 @@
-//{ Driver Code Starts
-// Initial Template for Java
 import java.io.*;
 import java.util.*;
 
@@ -15,23 +13,18 @@ class GFG {
         }
     }
 }
-// } Driver Code Ends
 
 
-// User function Template for Java
 class Solution {
     static String armstrongNumber(int n) {
-        // Extract digits
         int hundreds = n / 100;
         int tens = (n / 10) % 10;
         int units = n % 10;
 
-        // Calculate the sum of the cubes of the digits
         int sumOfCubes = (hundreds * hundreds * hundreds) +
                 (tens * tens * tens) +
                 (units * units * units);
 
-        // Compare the sum of cubes with the original number
         if (sumOfCubes == n) {
             return "true";
         } else {
